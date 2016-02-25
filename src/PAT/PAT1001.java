@@ -1,3 +1,4 @@
+package PAT;
 import java.util.Scanner;
 
 
@@ -16,9 +17,9 @@ public class PAT1001 {
 			c = scanner.nextLong();
 			
 		     if( a+b > c){
-		    	 System.out.printf("Case #%d: true\n", i);
+		    	 System.out.printf("Case #%d: true\r\n", i);
 		     }
-		     else System.out.printf("Case #%d: false\n", i);
+		     else System.out.printf("Case #%d: false\r\n", i);
 		}
 	}
 }
