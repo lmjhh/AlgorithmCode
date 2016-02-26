@@ -16,27 +16,24 @@ class Student {
 	}
 }
 
-
-public class Main2 {
+// 1005	德才论 
+public class PAT1005 {
 
 	static Comparator<Student> comparator = new Comparator<Student>() {
 		
 		public int compare(Student S1,Student S2){
 			
-			if(S1.der + S1.cai > S2.der + S2.cai) {
-				return -1;
+			if(S1.der + S1.cai != S2.der + S2.cai) {
+				return (S2.der + S2.cai) - (S1.der + S1.cai);
 			}
-			if(S1.cai + S1.der == S2.der + S2.cai) {
-				if(S1.der > S2.der) {
-					return -1;
+			else {
+				if(S1.der != S2.der) {
+					return S2.der - S1.der;
 				}
-				if(S1.der == S2.der){
-						if(S1.num < S2.num){
-							return -1;
-						}
-					}
+				else {
+					return S1.num - S2.num; 
 				}
-			return 0;
+			}
 		}
 	};
 	
