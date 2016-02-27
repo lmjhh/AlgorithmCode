@@ -2,6 +2,7 @@ package PAT;
 
 import java.util.Scanner;
 
+// 1008	锤子剪刀布 (20)
 public class PAT1008 {
 
 	static int AJ = 0,AC = 0,AB = 0,BJ = 0,BC = 0,BB = 0;
